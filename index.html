@@ -144,12 +144,13 @@
                     const existingMap = new Map(rawQuestions.map(item => [item.id, item]));
                     data.forEach(item => existingMap.set(item.id, item));
                     rawQuestions = Array.from(existingMap.values());
-                    localStorage.setItem("quiz_db", JSON.stringify(rawQuestions));
                 }
             } catch (e) { console.log(`Không tìm thấy file bai${lessonNum}.json trên server.`); }
         }
 
         async function autoLoadCurrentLesson() {
+            rawQuestions = []; // Reset dữ liệu cũ để tránh trùng lặp câu hỏi
+            localStorage.removeItem("quiz_db");
             const selectedLesson = document.getElementById("lesson-select").value;
             document.getElementById("q-title").innerText = "Đang tải dữ liệu bài học...";
             
@@ -162,8 +163,6 @@
         }
 
         window.onload = async function() {
-            const saved = localStorage.getItem("quiz_db");
-            if (saved) rawQuestions = JSON.parse(saved);
             await autoLoadCurrentLesson();
         };
 
