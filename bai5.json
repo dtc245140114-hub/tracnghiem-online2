@@ -1,0 +1,604 @@
+[
+  {
+    "id": "b5_q1",
+    "lesson": "5",
+    "type": "single",
+    "title": "Trong những nội dung của quyền dân tộc tự quyết, nội dung nào được coi là cơ bản, trước hết?",
+    "options": ["Quyền tự quyết về các mối quan hệ quốc tế", "Quyền tự quyết về chính trị", "Quyền tự quyết về văn hoá", "Quyền tự quyết về kinh tế"],
+    "answer": 1
+  },
+  {
+    "id": "b5_q2",
+    "lesson": "5",
+    "type": "single",
+    "title": "Đâu là đặc trưng quan trọng nhất, là cơ sở để liên kết các thành viên của dân tộc tạo thành nền tảng vững chắc của cộng đồng dân tộc?",
+    "options": [
+      "Có nét tâm lý riêng (nét tâm lý dân tộc) biểu hiện kết tinh trong nền văn hoá dân tộc và tạo thành bản sắc văn hoá của dân tộc.",
+      "Có thể cư trú tập trung trên một vùng lãnh thổ của một quốc gia, hoặc cư trú đan xen với nhiều dân tộc anh em",
+      "Có ngôn ngữ riêng và có thể có chữ viết riêng làm công cụ giao tiếp.",
+      "Có chung một phương thức sinh hoạt kinh tế"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "b5_q3",
+    "lesson": "5",
+    "type": "single",
+    "title": "Thứ tự quá trình phát triển của dân tộc lần lượt trải qua các hình thức nào?",
+    "options": ["Bộ tộc, thị tộc, bộ lạc, dân tộc", "Thị tộc, bộ lạc, bộ tộc, dân tộc", "Bộ lạc, bộ tộc, thị tộc, dân tộc", "Thị tộc, bộ tộc, bộ lạc, dân tộc"],
+    "answer": 1
+  },
+  {
+    "id": "b5_q4",
+    "lesson": "5",
+    "type": "single",
+    "title": "Theo chủ nghĩa Mác - Lênin, nguyên nhân nào dẫn đến các cộng đồng dân cư muốn tách ra để hình thành cộng đồng dân tộc độc lập?",
+    "options": [
+      "Do chủ nghĩa tư bản đã phát triển thành chủ nghĩa đế quốc",
+      "Do các cộng đồng dân cư muốn độc lập để có thể đi xâm chiếm các dân tộc khác",
+      "Do các cộng đồng dân cư muốn phân chia lại thị trường thế giới",
+      "Do sự thức tỉnh, sự trưởng thành về ý thức dân tộc, ý thức về quyền sống của mình"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "b5_q5",
+    "lesson": "5",
+    "type": "single",
+    "title": "Tôn giáo ra đời từ những nguồn gốc cơ bản nào?",
+    "options": [
+      "Có nguồn gốc do thượng đế tạo ra",
+      "Có nguồn gốc do chủ nghĩa tư bản tạo ra",
+      "Có nguồn gốc tự nhiên, kinh tế - xã hội, tâm lý, nhận thức",
+      "Có nguồn gốc do lực lượng siêu nhiên tạo ra"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "b5_q6",
+    "lesson": "5",
+    "type": "single",
+    "title": "Tôn giáo là sản phẩm của ai?",
+    "options": ["Các thần linh", "Thượng đế", "Con người", "Lực lượng siêu nhiên"],
+    "answer": 2
+  },
+  {
+    "id": "b5_q7",
+    "lesson": "5",
+    "type": "single",
+    "title": "Hiểu theo nghĩa rộng, dân tộc là:",
+    "options": ["Bộ tộc", "Tộc người", "Quốc gia", "Thị tộc"],
+    "answer": 2
+  },
+  {
+    "id": "b5_q8",
+    "lesson": "5",
+    "type": "single",
+    "title": "Tôn giáo khác với tín ngưỡng khác ở điểm nào?",
+    "options": [
+      "Tín ngưỡng tôn giáo có hệ thống giáo lý, giáo luật, có tổ chức và các nghi lễ chặt chẽ",
+      "Tín ngưỡng tôn giáo có số lượng tín đồ đông.",
+      "Tín ngưỡng tôn giáo ra đời từ rất sớm",
+      "Tín ngưỡng tôn giáo tồn tại ở tất cả các quốc gia trên thế giới."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "b5_q9",
+    "lesson": "5",
+    "type": "single",
+    "title": "Tìm đáp án sai về nguồn gốc hình thành của tôn giáo:",
+    "options": ["Nguồn gốc kinh tế - xã hội", "Nguồn gốc tâm lý", "Nguồn gốc nhận thức", "Nguồn gốc nhân tạo"],
+    "answer": 3
+  },
+  {
+    "id": "b5_q10",
+    "lesson": "5",
+    "type": "single",
+    "title": "Luận điểm nổi tiếng: \"Tôn giáo là tiếng thở dài của chúng sinh bị áp bức, là trái tim của thế giới không có trái tim.... Tôn giáo là thuốc phiện của nhân dân\" là của ai?",
+    "options": ["Ph. Ăngghen", "V.I. Lênin", "C. Mác", "Hồ Chí Minh"],
+    "answer": 2
+  },
+  {
+    "id": "b5_q11",
+    "lesson": "5",
+    "type": "single",
+    "title": "Theo chủ nghĩa Mác - Lênin, xét đến cùng nhân tố quyết định sự tồn tại và phát triển của các hình thái ý thức xã hội, trong đó có tôn giáo là gì?",
+    "options": [
+      "Các hoạt động chính trị và quan hệ chính trị",
+      "Sản xuất vật chất và các quan hệ kinh tế",
+      "Các cuộc cách mạng",
+      "Các hoạt động văn hoá"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "b5_q12",
+    "lesson": "5",
+    "type": "multi",
+    "title": "Tại sao ngày nay khoa học đã phát triển rất mạnh mẽ mà tôn giáo vẫn có xu hướng phát triển? (Chọn 2 đáp án đúng)",
+    "options": [
+      "Do xã hội có xu hướng phát triển ngày càng tụt lùi",
+      "Do nhận thức của con người về tự nhiên, về xã hội và về chính bản thân mình còn có giới hạn",
+      "Do lực lượng siêu nhiên thúc đẩy",
+      "Do thế giới mà con người đang sống vẫn còn muôn vàn điều bí ẩn mà khoa học chưa hiểu rõ bản chất của nó"
+    ],
+    "answer": [1, 3]
+  },
+  {
+    "id": "b5_q13",
+    "lesson": "5",
+    "type": "multi",
+    "title": "Theo quan điểm của chủ nghĩa Mác - Lênin, để thực hiện được bình đẳng dân tộc cần phải làm gì? (Chọn 2 đáp án đúng)",
+    "options": [
+      "Phải liên kết với các nước đế quốc lớn",
+      "Thủ tiêu tình trạng áp bức giai cấp, trên cơ sở đó xoá bỏ tình trạng áp bức dân tộc",
+      "Phải đấu tranh chống chủ nghĩa phân biệt chủng tộc, chủ nghĩa sô vanh",
+      "Phải duy trì chế độ tư hữu về tư liệu sản xuất"
+    ],
+    "answer": [1, 2]
+  },
+  {
+    "id": "b5_q14",
+    "lesson": "5",
+    "type": "single",
+    "title": "Ở Việt Nam hiện nay có khoảng bao nhiêu dân tộc?",
+    "options": ["50", "54", "45", "63"],
+    "answer": 1
+  },
+  {
+    "id": "b5_q15",
+    "lesson": "5",
+    "type": "single",
+    "title": "Tìm đáp án sai về đặc điểm dân tộc ở Việt Nam",
+    "options": [
+      "Các dân tộc cư trú tập trung tại các trung tâm lớn",
+      "Các dân tộc thiểu số ở Việt Nam phân bố chủ yếu ở địa bàn có vị trí chiến lược quan trọng",
+      "Các dân tộc ở Việt Nam có trình độ phát triển không đều",
+      "Có sự chênh lệch về số dân giữa các tộc người"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "b5_q16",
+    "lesson": "5",
+    "type": "single",
+    "title": "Vận dụng kiến thức về đặc điểm tôn giáo ở Việt Nam, hãy xác định số lượng tôn giáo đã được công nhận và cấp đăng ký hoạt động ở Việt Nam:",
+    "options": ["5", "13", "43", "16"],
+    "answer": 3
+  },
+  {
+    "id": "b5_q17",
+    "lesson": "5",
+    "type": "single",
+    "title": "Vận dụng kiến thức về vấn đề dân tộc, hãy chỉ ra điểm khác biệt cơ bản trong quá trình hình thành nên dân tộc Việt Nam so với các dân tộc khác là gì?",
+    "options": [
+      "Do quá trình đồng hóa của các bộ tộc phong kiến.",
+      "Do dân tộc Việt Nam có diện tích nhỏ",
+      "Do yêu cầu đoàn kết của quá trình đấu tranh chống thiên tai và xâm lược",
+      "Do sự phát triển tiến bộ của các bộ lạc"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "b5_q18",
+    "lesson": "5",
+    "type": "single",
+    "title": "Quan điểm: Không phân biệt dân tộc lớn hay nhỏ, ở trình độ phát triển cao hay thấp, các dân tộc đều có nghĩa vụ và quyền lợi ngang nhau trên tất cả các lĩnh vực của đời sống xã hội -thuộc nội dung nào trong Cương lĩnh dân tộc của V.I. Lênin?",
+    "options": ["Đoàn kết các dân tộc", "Các dân tộc được quyền tự quyết", "Các dân tộc hoàn toàn bình đẳng", "Liên hiệp công nhân tất cả các dân tộc"],
+    "answer": 2
+  },
+  {
+    "id": "b5_q19",
+    "lesson": "5",
+    "type": "single",
+    "title": "Đối với quốc gia và từng thành viên của dân tộc, yếu tố nào là thiêng liêng nhất mà nếu không có thì không có khái niệm tổ quốc, quốc gia:",
+    "options": ["Lãnh thổ", "Kinh tế", "Truyền thống văn hoá", "Ngôn ngữ"],
+    "answer": 0
+  },
+  {
+    "id": "b5_q20",
+    "lesson": "5",
+    "type": "single",
+    "title": "Niềm tin của con người vào các lực lượng siêu nhiên, thần thánh đến mức độ mê muội, cuống tín, dẫn đến những hành vi cực đoan, sai lệch quá mức, trái với các giá trị văn hoá, đạo đức, pháp luật – gọi là:",
+    "options": ["Thờ cúng tổ tiên", "Tín ngưỡng thờ Mẫu", "Thờ anh hùng dân tộc", "Mê tín dị đoan"],
+    "answer": 3
+  },
+  {
+    "id": "b5_q21",
+    "lesson": "5",
+    "type": "single",
+    "title": "Tại sao các tôn giáo ở Việt Nam luôn đồng hành cùng dân tộc và có nhiều đóng góp quan trọng trong quá trình xây dựng và bảo vệ đất nước?",
+    "options": [
+      "Vì các tôn giáo có vai trò quyết định đến những vấn đề quan trọng của xã hội",
+      "Vì các tôn giáo có quan hệ với các tổ chức nước ngoài",
+      "Vì các tôn giáo thường bị lợi dụng bởi các thế lực phản động",
+      "Vì đa số các tín đồ là nhân dân lao động có lòng yêu nước, chống giặc ngoại xâm"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "b5_q22",
+    "lesson": "5",
+    "type": "single",
+    "title": "Tôn giáo là một phạm trù thuộc:",
+    "options": ["Kiến trúc thượng tầng", "Hình thái ý thức xã hội", "Cở sở hạ tầng", "Tồn tại xã hội"],
+    "answer": 1
+  },
+  {
+    "id": "b5_q23",
+    "lesson": "5",
+    "type": "single",
+    "title": "Đâu là sự giống nhau giữa tôn giáo và tín ngưỡng?",
+    "options": ["Đều có các giáo sĩ", "Đếu có hệ thống kinh điển", "Đều có giáo chủ", "Đều có niềm tin vào đồng siêu nhiên"],
+    "answer": 3
+  },
+  {
+    "id": "b5_q24",
+    "lesson": "5",
+    "type": "single",
+    "title": "Về phương diện thế giới quan, tôn giáo mang bản chất:",
+    "options": ["Thế giới quan biện chứng", "Thế giới quan siêu hình", "Thế giới quan duy tâm", "Thế giới quan duy vật"],
+    "answer": 2
+  },
+  {
+    "id": "b5_q25",
+    "lesson": "5",
+    "type": "single",
+    "title": "Nội dung nào vừa là nội dung chủ yếu vừa là giải pháp quan trọng để liên kết các nội dung của Cương lĩnh dân tộc thành một chỉnh thể?",
+    "options": ["Các dân tộc hoàn toàn bình đẳng", "Các dân tộc có nền phát triển kinh tế ngang nhau", "Liên hiệp công nhân tất cả các dân tộc", "Các dân tộc được quyền tự quyết"],
+    "answer": 2
+  },
+  {
+    "id": "b5_q26",
+    "lesson": "5",
+    "type": "single",
+    "title": "Sự sợ hãi trước những hiện tượng tự nhiên, xã hội, hay lúc ốm đau, những may rủi, bất ngờ, tâm lý muốn bình yên khi làm việc lớn….. khiến con người dễ tìm đến với hình thái ý thức xã hội nào?",
+    "options": ["Ý thức chính trị", "Ý thức thẩm mỹ", "Ý thức tôn giáo", "Ý thức pháp quyền"],
+    "answer": 2
+  },
+  {
+    "id": "b5_q27",
+    "lesson": "5",
+    "type": "single",
+    "title": "Vì sao Đảng, Nhà nước Việt Nam chủ trương luôn tôn trọng, bảo đảm quyền tự do tín ngưỡng tôn giáo và không tín ngưỡng tôn giáo của nhân dân?",
+    "options": [
+      "Vì tín ngưỡng tôn giáo được du nhập từ nước ngoài vào",
+      "Vì lực lượng chức sắc trong các tôn giáo có tiềm lực kinh tế lớn mạnh",
+      "Vì tín ngưỡng, tôn giáo có số lượng tín đồ đông",
+      "Vì tín ngưỡng, tôn giáo là nhu cầu tinh thần của nhân dân"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "b5_q28",
+    "lesson": "5",
+    "type": "single",
+    "title": "Tại sao các tôn giáo ở Việt Nam luôn đồng hành cùng dân tộc và có nhiều đóng góp quan trọng trong quá trình xây dựng và bảo vệ đất nước?",
+    "options": [
+      "Vì các tôn giáo thường bị lợi dụng bởi các thế lực phản động",
+      "Vì đa số các tín đồ là nhân dân lao động có lòng yêu nước, chống giặc ngoại xâm",
+      "Vì các tôn giáo có vai trò quyết định đến những vấn đề quan trọng của xã hội",
+      "Vì các tôn giáo có quan hệ với các tổ chức nước ngoài"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "b5_q29",
+    "lesson": "5",
+    "type": "single",
+    "title": "Vận dụng kiến thức về vấn đề dân tộc, hãy chỉ ra điểm khác biệt cơ bản trong quá trình hình thành nên dân tộc Việt Nam so với các dân tộc khác là gì?",
+    "options": [
+      "Do sự phát triển tiến bộ của các bộ lạc",
+      "Do dân tộc Việt Nam có diện tích nhỏ",
+      "Do yêu cầu đoàn kết của quá trình đấu tranh chống thiên tai và xâm lược",
+      "Do quá trình đồng hóa của các bộ tộc phong kiến."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "b5_q30",
+    "lesson": "5",
+    "type": "multi-column",
+    "title": "Kéo thả các yếu tố liên quan vào các cột tương ứng:",
+    "columns": ["Đặc trưng của dân tộc (tộc người)", "Đặc trưng của dân tộc (quốc gia)"],
+    "words": [
+      "Ngôn ngữ tộc người",
+      "Văn hóa đặc thù",
+      "Ý thức tự giác tộc người",
+      "Ngôn ngữ chung",
+      "Lãnh thổ chung",
+      "Tâm lý dân tộc"
+    ],
+    "answer": {
+      "0": ["Ngôn ngữ tộc người", "Văn hóa đặc thù", "Ý thức tự giác tộc người"],
+      "1": ["Ngôn ngữ chung", "Lãnh thổ chung", "Tâm lý dân tộc"]
+    }
+  },
+  {
+    "id": "b5_q31",
+    "lesson": "5",
+    "type": "multi-column",
+    "title": "Kéo thả các yếu tố liên quan đến tôn giáo vào các cột tương ứng:",
+    "columns": ["Nguồn gốc của tôn giáo", "Yếu tố liên quan đến tôn giáo"],
+    "words": ["Kinh tế", "Nhận thức", "Tâm lý", "Hệ thống tín đồ", "Cơ sở thờ tự", "Niềm tin"],
+    "answer": {
+      "0": ["Kinh tế", "Nhận thức", "Tâm lý"],
+      "1": ["Hệ thống tín đồ", "Cơ sở thờ tự", "Niềm tin"]
+    }
+  },
+  {
+    "id": "b5_q32",
+    "lesson": "5",
+    "type": "multi-drag",
+    "title": "Kéo thả các đáp án đúng tương ứng với các phát biểu về nội dung Cương lĩnh dân tộc của Chủ nghĩa Mác - Lênin:",
+    "items": [
+      { "id": 0, "stmt": "1. Thực hiện quyền tự quyết dân tộc phải đứng vững trên lập trường của {drop}" },
+      { "id": 1, "stmt": "2. Yếu tố thúc đẩy bình đẳng dân tộc là {drop}" },
+      { "id": 2, "stmt": "3. {drop} là giải pháp quan trọng để liên kết các nội dung của Cương lĩnh dân tộc thành một chỉnh thể" },
+      { "id": 3, "stmt": "4. {drop} là quyền thiêng liêng của các dân tộc, không phân biệt dân tộc lớn hay nhỏ" }
+    ],
+    "words": ["Giai cấp công nhân", "Quyền bình đẳng dân tộc", "Cơ sở pháp lý", "Liên hiệp công nhân các dân tộc lại"],
+    "answer": {
+      "0": "Giai cấp công nhân",
+      "1": "Cơ sở pháp lý",
+      "2": "Liên hiệp công nhân các dân tộc lại",
+      "3": "Quyền bình đẳng dân tộc"
+    }
+  },
+  {
+    "id": "b5_q33",
+    "lesson": "5",
+    "type": "tf",
+    "title": "Chọn đáp án (Đúng hoặc Sai) với từng phát biểu sau:",
+    "statements": [
+      "Dân tộc (quốc gia) không cần lãnh thổ chung",
+      "Bình đẳng dân tộc là nội dung cương lĩnh dân tộc của Mác-Lênin",
+      "Quyền tự quyết dân tộc bao gồm quyền phân lập thành quốc gia độc lập",
+      "Dân tộc là cộng đồng người có ngôn ngữ riêng và văn hóa đặc thù"
+    ],
+    "answer": [false, true, true, true]
+  },
+  {
+    "id": "b5_q34",
+    "lesson": "5",
+    "type": "tf",
+    "title": "Chọn đáp án (Đúng hoặc Sai) với từng phát biểu sau:",
+    "statements": [
+      "Khoa học chưa giải thích hết được các hiện tượng là lý do tôn giáo phát triển.",
+      "Tôn giáo phản ánh chân thực hiện thực khách quan",
+      "Tín ngưỡng là niềm tin vào lực lượng siêu nhiên",
+      "Nguồn gốc nhận thức của tôn giáo là sự hạn chế hiểu biết của con người."
+    ],
+    "answer": [true, false, true, true]
+  },
+  {
+    "id": "b5_q35",
+    "lesson": "5",
+    "type": "tf",
+    "title": "Chọn đáp án (Đúng hoặc Sai) với từng phát biểu sau:",
+    "statements": [
+      "Tín ngưỡng có hệ thống giáo lý chặt chẽ",
+      "Tôn giáo phản ánh hoang đường, hư ảo hiện thực khách quan",
+      "Nguồn gốc kinh tế - xã hội dẫn đến sự ra đời của tôn giáo",
+      "Mê tín dị đoan là niềm tin mù quáng cần loại bỏ"
+    ],
+    "answer": [false, true, true, true]
+  },
+  {
+    "id": "b5_q36",
+    "lesson": "5",
+    "type": "tf",
+    "title": "Chọn đáp án (Đúng hoặc Sai) với từng phát biểu sau:",
+    "statements": [
+      "Lãnh thổ chung là đặc trưng của dân tộc quốc gia",
+      "Cương lĩnh dân tộc của Chủ nghĩa Mác-Lênin không đề cập đến bình đẳng dân tộc",
+      "Quyền tự quyết dân tộc không bao gồm nội dung liên hiệp các dân tộc lại",
+      "Dân tộc (tộc người) có ngôn ngữ riêng"
+    ],
+    "answer": [true, false, true, true]
+  },
+  {
+    "id": "b5_q37",
+    "lesson": "5",
+    "type": "multi-drag",
+    "title": "Kéo thả các đáp án tương ứng vào chỗ trống:",
+    "items": [
+      { "id": 0, "stmt": "1. Mê tín dị đoan dẫn con người đến điều gì? -> {drop}" },
+      { "id": 1, "stmt": "2. Là niềm tin và sự ngưỡng mộ của con người vào một lực lượng siêu nhiên, thần bí -> {drop}" },
+      { "id": 2, "stmt": "3. Là sự phản ánh một cách hoang đường, hư ảo hiện thực khách quan -> {drop}" },
+      { "id": 3, "stmt": "4. Là sự phản ánh niềm tin mù quáng của một số người vào các lực lượng siêu nhiên -> {drop}" }
+    ],
+    "words": ["Mê tín dị đoan", "Tín ngưỡng", "Mê muội", "Tôn giáo"],
+    "answer": {
+      "0": "Mê muội",
+      "1": "Tín ngưỡng",
+      "2": "Tôn giáo",
+      "3": "Mê tín dị đoan"
+    }
+  },
+  {
+    "id": "b5_q38",
+    "lesson": "5",
+    "type": "multi-drag",
+    "title": "Kéo thả các đáp án tương ứng vào chỗ trống:",
+    "items": [
+      { "id": 0, "stmt": "1. Chủ nghĩa Mác-Lênin coi tín ngưỡng, tôn giáo là một phạm trù thuộc lĩnh vực nào của xã hội? -> {drop}" },
+      { "id": 1, "stmt": "2. Niềm tin và sự ngưỡng mộ của con người vào một lực lượng siêu nhiên, thần bí được gọi là gì? -> {drop}" },
+      { "id": 2, "stmt": "3. Quan điểm của chủ nghĩa Mác - Lênin về tôn giáo là gì? -> {drop}" },
+      { "id": 3, "stmt": "4. Bản chất của tôn giáo theo chủ nghĩa Mác - Lênin là gì? -> {drop}" }
+    ],
+    "words": ["Hình thái ý thức xã hội", "Tôn trọng tự do tôn giáo", "Tín ngưỡng", "Phản ánh hư ảo hiện thực khách quan"],
+    "answer": {
+      "0": "Hình thái ý thức xã hội",
+      "1": "Tín ngưỡng",
+      "2": "Tôn trọng tự do tôn giáo",
+      "3": "Phản ánh hư ảo hiện thực khách quan"
+    }
+  },
+  {
+    "id": "b5_q39",
+    "lesson": "5",
+    "type": "multi-column",
+    "title": "Kéo thả các yếu tố liên quan vào các cột tương ứng:",
+    "columns": ["Đặc trưng của dân tộc", "Nội dung cương lĩnh dân tộc của Mác-Lênin"],
+    "words": [
+      "Ngôn ngữ riêng",
+      "Tâm lý dân tộc riêng",
+      "Bản sắc văn hóa dân tộc",
+      "Lãnh thổ chung",
+      "Các dân tộc hoàn toàn bình đẳng",
+      "Các dân tộc được quyền tự quyết",
+      "Liên hiệp công nhân tất cả các dân tộc"
+    ],
+    "answer": {
+      "0": ["Ngôn ngữ riêng", "Tâm lý dân tộc riêng", "Bản sắc văn hóa dân tộc", "Lãnh thổ chung"],
+      "1": ["Các dân tộc hoàn toàn bình đẳng", "Các dân tộc được quyền tự quyết", "Liên hiệp công nhân tất cả các dân tộc"]
+    }
+  },
+  {
+    "id": "b5_q40",
+    "lesson": "5",
+    "type": "multi",
+    "title": "Nội dung quyền bình đẳng dân tộc của Chủ nghĩa Mác – Lênin bao gồm: (Chọn 3 đáp án đúng)",
+    "options": [
+      "Xoá bỏ tình trạng áp bức dân tộc",
+      "Không phân biệt dân tộc lớn hay nhỏ, trình độ cao hay thấp",
+      "Các dân tộc đều có nghĩa vụ và quyền lợi ngang nhau trên tất cả các lĩnh vực của đời sống xã hội",
+      "Các dân tộc tự lựa chọn chế độ chính trị và con đường phát triển của dân tộc mình"
+    ],
+    "answer": [0, 1, 2]
+  },
+  {
+    "id": "b5_q41",
+    "lesson": "5",
+    "type": "single",
+    "title": "Dân tộc hiểu theo nghĩa hẹp là:",
+    "options": ["Tộc người", "Quốc gia dân tộc", "Bộ lạc", "Bộ tộc"],
+    "answer": 0
+  },
+  {
+    "id": "b5_q42",
+    "lesson": "5",
+    "type": "multi",
+    "title": "Hãy chỉ ra đâu là nguồn gốc tồn tại của Tôn giáo? (Chọn 2 đáp án đúng)",
+    "options": [
+      "Do các lực lượng siêu nhiên thúc đẩy",
+      "Do quy định của nhà nước",
+      "Do vẫn tồn tại đối kháng giai cấp.",
+      "Do khoa học chưa giải thích hết được các hiện tượng tự nhiên và xã hội."
+    ],
+    "answer": [2, 3]
+  },
+  {
+    "id": "b5_q43",
+    "lesson": "5",
+    "type": "multi",
+    "title": "Những tầng lớp nào sau đây tham gia cơ cấu xã hội – giai cấp ở Việt Nam? (Chọn 2 đáp án đúng)",
+    "options": ["Nhóm học sinh.", "Phụ nữ", "Thanh niên.", "Tín đồ tôn giáo"],
+    "answer": [0, 3]
+  },
+  {
+    "id": "b5_q44",
+    "lesson": "5",
+    "type": "multi",
+    "title": "Những phương hướng nào sau đây củng cố liên minh giai cấp, tầng lớp ở Việt Nam trong thời kỳ quá độ lên chủ nghĩa xã hội? (Chọn 2 đáp án đúng)",
+    "options": [
+      "Tăng vai trò tôn giáo đối với các giai cấp, tầng lớp",
+      "Giảm vai trò kinh tế trong xã hội",
+      "Tạo sự đồng thuận giữa các lực lượng.",
+      "Phát huy tinh thần đoàn kết."
+    ],
+    "answer": [2, 3]
+  },
+  {
+    "id": "b5_q45",
+    "lesson": "5",
+    "type": "tf",
+    "title": "Chọn đáp án Đúng hoặc Sai với từng phát biểu sau:",
+    "statements": [
+      "Tôn giáo là đặc trưng chính của dân tộc quốc gia.",
+      "Dân tộc (tộc người) có ý thức tự giác tộc người.",
+      "Tâm lý dân tộc tạo nên bản sắc văn hóa dân tộc.",
+      "Đấu tranh chống chủ nghĩa Sô-vanh là giải pháp thực hiện bình đẳng dân tộc."
+    ],
+    "answer": [false, true, true, true]
+  },
+  {
+    "id": "b5_q46",
+    "lesson": "5",
+    "type": "tf",
+    "title": "Chọn đáp án Đúng hoặc Sai với từng phát biểu sau:",
+    "statements": [
+      "Tôn giáo không có lễ nghi bắt buộc.",
+      "Tôn trọng tự do tín ngưỡng tôn giáo là quan điểm của chủ nghĩa Mác – Lênin",
+      "Nguồn gốc tâm lý của tôn giáo là sợ hãi trước hiện tượng tự nhiên.",
+      "Giáo lý chặt chẽ là đặc trưng của tôn giáo."
+    ],
+    "answer": [false, true, true, true]
+  },
+  {
+    "id": "b5_q47",
+    "lesson": "5",
+    "type": "multi-drag",
+    "title": "Kéo thả các đáp án đúng tương ứng với các phát biểu về dân tộc:",
+    "items": [
+      { "id": 0, "stmt": "1. Đặc trưng quan trọng nhất của dân tộc là gì? -> {drop}" },
+      { "id": 1, "stmt": "2. Khái niệm dân tộc theo nghĩa hẹp được gọi là gì? -> {drop}" },
+      { "id": 2, "stmt": "3. Nội dung cơ bản của Cương lĩnh dân tộc Mác – Lênin là gì? -> {drop}" },
+      { "id": 3, "stmt": "4. Yếu tố thiêng liêng đối với dân tộc (quốc gia) và từng thành viên dân tộc là gì? -> {drop}" }
+    ],
+    "words": ["Lãnh thổ", "Dân tộc tộc người", "Phương thức sinh hoạt kinh tế chung", "Bình đẳng dân tộc"],
+    "answer": {
+      "0": "Phương thức sinh hoạt kinh tế chung",
+      "1": "Dân tộc tộc người",
+      "2": "Bình đẳng dân tộc",
+      "3": "Lãnh thổ"
+    }
+  },
+  {
+    "id": "b5_q48",
+    "lesson": "5",
+    "type": "single",
+    "title": "Vận dụng những kiến thức đã học hãy cho biết việc thực hiện chế độ công hữu về tư liệu sản xuất chủ yếu và thực hiện chế độ phân phối lợi ích theo kết quả lao động là chủ yếu, là bản chất kinh tế của nền dân chủ nào?",
+    "options": ["Nền dân chủ xã hội chủ nghĩa", "Nền dân chủ tư sản", "Nền dân chủ chủ nô", "Nền dân chủ nguyên thủy"],
+    "answer": 0
+  },
+  {
+    "id": "b5_q49",
+    "lesson": "5",
+    "type": "single",
+    "title": "Ở Việt Nam bản chất dân chủ xã hội chủ nghĩa là dựa vào:",
+    "options": [
+      "Giai cấp công nhân",
+      "Nhà nước của nhân dân do nhân dân và vì nhân dân dưới sự lãnh đạo của Đảng",
+      "Nhân dân",
+      "Sự quản lý của Nhà nước"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "b5_q50",
+    "lesson": "5",
+    "type": "single",
+    "title": "Quá trình phát triển của dân tộc trải qua mấy hình thức cộng đồng người?",
+    "options": ["5", "3", "4", "2"],
+    "answer": 2
+  },
+  {
+    "id": "b5_q51",
+    "lesson": "5",
+    "type": "single",
+    "title": "Lực lượng nào là lực lượng lao động sáng tạo đặc biệt quan trọng trong tiến trình đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước và hội nhập quốc tế, xây dựng kinh tế tri thức, phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc?",
+    "options": ["Thanh niên", "Công nhân", "Nông dân", "Trí thức"],
+    "answer": 3
+  },
+  {
+    "id": "b5_q52",
+    "lesson": "5",
+    "type": "multi",
+    "title": "Những nội dung nào sau đây là nội dung cơ bản của liên minh giai cấp, tầng lớp ở Việt Nam trong thời kỳ quá độ lên chủ nghĩa xã hội? (Chọn 2 đáp án đúng)",
+    "options": ["Nội dung tôn giáo", "Nội dung kinh tế", "Nội dung chính trị", "Nội dung văn hóa"],
+    "answer": [1, 2]
+  }
+]

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Ôn Luyện Trắc Nghiệm CNXHKH</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #f0f2f5; color: #1c1e21; padding: 20px; }
+        body.dark { background: #18191a; color: #e4e6eb; }
+        .container { max-width: 950px; margin: 0 auto; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        body.dark .container { background: #242526; }
+        header { border-bottom: 2px solid #e4e6eb; padding-bottom: 15px; margin-bottom: 20px; }
+        .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        h1 { font-size: 20px; color: #1877f2; }
+        .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+        select, .btn, input[type="file"] { padding: 8px 14px; border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px; }
+        .btn-primary { background: #1877f2; color: white; border: none; }
+        .btn-success { background: #42b72a; color: white; border: none; }
+        .btn-danger { background: #e41e3f; color: white; border: none; }
+        .btn-toggle { background: #e4e6eb; color: #050505; border: none; }
+        .question-card { background: #f7f8fa; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        body.dark .question-card { background: #323334; border-color: #4e4f50; }
+        .question-title { font-weight: 600; margin-bottom: 15px; font-size: 16px; line-height: 1.6; }
+        .option-item { display: block; background: #fff; border: 1px solid #ccc; padding: 12px 15px; border-radius: 6px; margin-bottom: 10px; cursor: pointer; }
+        body.dark .option-item { background: #242526; border-color: #4e4f50; }
+        .option-item input { margin-right: 10px; }
+        .tf-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .tf-table th, .tf-table td { border: 1px solid #ccc; padding: 10px; }
+        .tf-btn { padding: 6px 14px; margin-right: 5px; border: 1px solid #ccc; background: #fff; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        .tf-btn.selected-true { background: #2e7d32; color: white; }
+        .tf-btn.selected-false { background: #c62828; color: white; }
+        .drop-target { display: inline-block; min-width: 160px; min-height: 32px; padding: 4px 10px; border: 2px dashed #1877f2; background: #e7f3ff; border-radius: 6px; font-weight: bold; color: #1877f2; text-align: center; vertical-align: middle; cursor: pointer; }
+        .draggable-words { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 8px; min-height: 60px; }
+        body.dark .draggable-words { background: #242526; border-color: #4e4f50; }
+        .drag-word { padding: 8px 16px; background: #1877f2; color: white; border-radius: 20px; cursor: grab; font-weight: bold; user-select: none; display: inline-block; }
+        .drag-word:active { cursor: grabbing; }
+        .drag-stmt { margin-bottom: 12px; line-height: 1.8; }
+        .columns-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .columns-table th { background: #f0f2f5; border: 1px solid #ccc; padding: 10px; text-align: center; font-weight: bold; }
+        body.dark .columns-table th { background: #3a3b3c; border-color: #4e4f50; }
+        .columns-table td { border: 1px solid #ccc; padding: 12px; vertical-align: top; width: 50%; min-height: 120px; }
+        body.dark .columns-table td { border-color: #4e4f50; }
+        .column-drop-zone { min-height: 100px; display: flex; flex-direction: column; gap: 8px; border: 2px dashed #ccc; border-radius: 6px; padding: 8px; background: #fafafa; }
+        body.dark .column-drop-zone { background: #2b2c2d; border-color: #555; }
+        .controls { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(38px, 1fr)); gap: 8px; margin-top: 20px; }
+        .grid-btn { padding: 8px 0; border: 1px solid #ccc; background: #f0f2f5; border-radius: 4px; cursor: pointer; text-align: center; font-size: 12px; }
+        .grid-btn.answered { background: #e7f3ff; border-color: #1877f2; color: #1877f2; font-weight: bold; }
+        .grid-btn.correct-btn { background: #4caf50 !important; color: white !important; }
+        .grid-btn.wrong-btn { background: #f44336 !important; color: white !important; }
+        .review-box { margin-top: 25px; border-top: 2px solid #ddd; padding-top: 20px; }
+        .review-card { padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 5px solid #ccc; }
+        .review-card.correct { background: #e8f5e9; border-left-color: #4caf50; }
+        .review-card.wrong { background: #ffebee; border-left-color: #f44336; }
+        .result-box { text-align: center; padding: 20px; background: #e7f3ff; border-radius: 8px; margin-bottom: 20px; color: #1877f2; font-size: 18px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>HỆ THỐNG ÔN LUYỆN TRẮC NGHIỆM CNXHKH</h1>
+                <button class="btn btn-toggle" onclick="document.body.classList.toggle('dark')">🌙 Tối / Sáng</button>
+            </div>
+            <div class="toolbar">
+                <label><b>Chọn bài học:</b></label>
+                <select id="lesson-select" onchange="autoLoadCurrentLesson()">
+                    <option value="1">Bài 1: Khái luận về CNXHKH</option>
+                    <option value="2">Bài 2: CNXH & Thời kỳ quá độ</option>
+                    <option value="3">Bài 3: Dân chủ XHCN & Nhà nước XHCN</option>
+                    <option value="4">Bài 4: Cơ cấu xã hội - giai cấp & Liên minh</option>
+                    <option value="5">Bài 5: Vấn đề dân tộc & Tôn giáo</option>
+                    <option value="6">Bài 6: Vấn đề gia đình trong thời kỳ quá độ</option>
+                    <option value="all">Tất cả các bài (Thi tổng hợp)</option>
+                </select>
+                <button class="btn btn-success" onclick="startNewQuiz()">🔀 Đảo câu hỏi & Làm mới</button>
+                <input type="file" id="file-input" accept=".json" onchange="importJSON(event)" style="display:none">
+                <button class="btn btn-primary" onclick="document.getElementById('file-input').click()">📂 Nạp file ngoài (.json)</button>
+                <button class="btn btn-danger" onclick="clearData()">🗑️ Xóa bộ nhớ đệm</button>
+            </div>
+        </header>
+        <div id="result-box" style="display:none;"></div>
+        <div id="quiz-container">
+            <div id="question-card" class="question-card">
+                <div id="q-title" class="question-title">Đang tự động tải dữ liệu câu hỏi từ hệ thống...</div>
+                <div id="q-options"></div>
+            </div>
+            <div class="controls">
+                <button class="btn btn-toggle" onclick="prevQuestion()">⬅ Câu trước</button>
+                <span id="q-progress" style="font-weight:bold;">0 / 0</span>
+                <button class="btn btn-toggle" onclick="nextQuestion()">Câu sau ➡</button>
+                <button class="btn btn-primary" onclick="submitQuiz()">Nộp bài</button>
+            </div>
+            <div id="grid" class="grid"></div>
+        </div>
+        <div id="review-container" class="review-box" style="display:none;">
+            <h3>📋 Chi tiết kết quả làm bài:</h3>
+            <div id="review-list" style="margin-top:15px;"></div>
+        </div>
+    </div>
+    <script>
+        let rawQuestions = []; let currentQuestions = []; let currentIndex = 0;
+        let userAnswers = {}; let activeDropSlot = null; let isSubmitted = false; let draggedWord = null;
+
+        function shuffleArray(array) {
+            let shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        function clearData() {
+            if (confirm("Xóa bộ nhớ đệm trình duyệt?")) {
+                localStorage.removeItem("quiz_db"); rawQuestions = []; currentQuestions = [];
+                autoLoadCurrentLesson();
+            }
+        }
+
+        function importJSON(event) {
+            const file = event.target.files[0]; if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    const existingMap = new Map(rawQuestions.map(item => [item.id, item]));
+                    data.forEach(item => existingMap.set(item.id, item));
+                    rawQuestions = Array.from(existingMap.values());
+                    localStorage.setItem("quiz_db", JSON.stringify(rawQuestions));
+                    alert(`Nạp thành công! Tổng số câu hiện có: ${rawQuestions.length} câu.`);
+                    loadLesson();
+                } catch(err) { alert("File .json bị lỗi cú pháp!"); }
+            };
+            reader.readAsText(file);
+        }
+
+        async function fetchLessonFile(lessonNum) {
+            try {
+                const res = await fetch(`bai${lessonNum}.json`);
+                if (res.ok) {
+                    const data = await res.json();
+                    const existingMap = new Map(rawQuestions.map(item => [item.id, item]));
+                    data.forEach(item => existingMap.set(item.id, item));
+                    rawQuestions = Array.from(existingMap.values());
+                    localStorage.setItem("quiz_db", JSON.stringify(rawQuestions));
+                }
+            } catch (e) { console.log(`Không tìm thấy file bai${lessonNum}.json trên server.`); }
+        }
+
+        async function autoLoadCurrentLesson() {
+            const selectedLesson = document.getElementById("lesson-select").value;
+            document.getElementById("q-title").innerText = "Đang tải dữ liệu bài học...";
+            
+            if (selectedLesson === "all") {
+                for (let i = 1; i <= 6; i++) await fetchLessonFile(i);
+            } else {
+                await fetchLessonFile(selectedLesson);
+            }
+            loadLesson();
+        }
+
+        window.onload = async function() {
+            const saved = localStorage.getItem("quiz_db");
+            if (saved) rawQuestions = JSON.parse(saved);
+            await autoLoadCurrentLesson();
+        };
+
+        function loadLesson() {
+            const selectedLesson = document.getElementById("lesson-select").value;
+            if (selectedLesson === "all") currentQuestions = [...rawQuestions];
+            else currentQuestions = rawQuestions.filter(q => String(q.lesson) === String(selectedLesson));
+
+            if (currentQuestions.length === 0) {
+                document.getElementById("q-title").innerText = `Chưa có file bai${selectedLesson}.json trên GitHub. Vui lòng kiểm tra lại file tải lên!`;
+                document.getElementById("q-options").innerHTML = ""; document.getElementById("grid").innerHTML = "";
+                document.getElementById("q-progress").innerText = "0 / 0"; return;
+            }
+            startNewQuiz();
+        }
+
+        function startNewQuiz() {
+            if (!currentQuestions.length) return;
+            currentQuestions = shuffleArray(currentQuestions);
+            currentIndex = 0; userAnswers = {}; isSubmitted = false;
+            document.getElementById("result-box").style.display = "none";
+            document.getElementById("review-container").style.display = "none";
+            renderQuestion();
+        }
+
+        function renderQuestion() {
+            if (!currentQuestions.length) return;
+            const q = currentQuestions[currentIndex];
+            document.getElementById("q-title").innerText = `Câu ${currentIndex + 1}: ${q.title}`;
+            document.getElementById("q-progress").innerText = `${currentIndex + 1} / ${currentQuestions.length}`;
+            let html = "";
+            if (q.type === "single") {
+                q.options.forEach((opt, idx) => {
+                    const checked = userAnswers[q.id] === idx ? "checked" : "";
+                    html += `<label class="option-item"><input type="radio" name="opt" value="${idx}" ${checked} onchange="selectSingle(${idx})"> ${opt}</label>`;
+                });
+            } else if (q.type === "multi") {
+                const currentAns = userAnswers[q.id] || [];
+                q.options.forEach((opt, idx) => {
+                    const checked = currentAns.includes(idx) ? "checked" : "";
+                    html += `<label class="option-item"><input type="checkbox" ${checked} onchange="selectMulti(${idx})"> ${opt}</label>`;
+                });
+            } else if (q.type === "tf") {
+                const currentAns = userAnswers[q.id] || {};
+                html += `<table class="tf-table"><tr><th>Mệnh đề</th><th>Chọn</th></tr>`;
+                q.statements.forEach((stmt, idx) => {
+                    const val = currentAns[idx];
+                    const btnTrue = val === true ? "selected-true" : "";
+                    const btnFalse = val === false ? "selected-false" : "";
+                    html += `<tr><td>${stmt}</td><td><button class="tf-btn ${btnTrue}" onclick="selectTF(${idx}, true)">Đúng</button><button class="tf-btn ${btnFalse}" onclick="selectTF(${idx}, false)">Sai</button></td></tr>`;
+                });
+                html += `</table>`;
+            } else if (q.type === "multi-drag") {
+                const currentAns = userAnswers[q.id] || {};
+                const usedWords = Object.values(currentAns);
+                q.items.forEach(item => {
+                    const filledWord = currentAns[item.id];
+                    const activeBorder = activeDropSlot === item.id ? "border:2px solid #1877f2; background:#fff3cd;" : "";
+                    const dropBox = `<span class="drop-target" style="${activeBorder}" ondragover="allowDrop(event)" ondrop="dropToSlot(event, ${item.id})" onclick="setSlot(${item.id})">${filledWord ? `<div class="drag-word" draggable="true" ondragstart="dragStart(event, '${filledWord}')">${filledWord}</div>` : "(Kéo thả từ vào đây)"}</span>`;
+                    html += `<div class="drag-stmt">${item.stmt.replace("{drop}", dropBox)}</div>`;
+                });
+                html += `<div class="draggable-words" ondragover="allowDrop(event)" ondrop="dropToBank(event)"><p style="width:100%; font-size:13px; color:#666;">KÉO TỪ BÊN DƯỚI THẢ VÀO Ô TRỐNG:</p>`;
+                q.words.forEach(w => { if (!usedWords.includes(w)) html += `<div class="drag-word" draggable="true" ondragstart="dragStart(event, '${w}')" onclick="clickWord('${w}')">${w}</div>`; });
+                html += `</div>`;
+            } else if (q.type === "multi-column") {
+                const currentAns = userAnswers[q.id] || { 0: [], 1: [] };
+                const usedWords = [...(currentAns[0] || []), ...(currentAns[1] || [])];
+                html += `<table class="columns-table"><tr>`;
+                q.columns.forEach((colTitle) => { html += `<th>${colTitle}</th>`; });
+                html += `</tr><tr>`;
+                q.columns.forEach((_, colIdx) => {
+                    const colWords = currentAns[colIdx] || [];
+                    html += `<td><div class="column-drop-zone" ondragover="allowDrop(event)" ondrop="dropToColumn(event, ${colIdx})">`;
+                    colWords.forEach(w => { html += `<div class="drag-word" draggable="true" ondragstart="dragStart(event, '${w}')">${w}</div>`; });
+                    if (colWords.length === 0) html += `<span style="color:#aaa; font-size:12px; text-align:center; padding:20px 0;">(Kéo thả từ vào đây)</span>`;
+                    html += `</div></td>`;
+                });
+                html += `</tr></table>`;
+                html += `<div class="draggable-words" ondragover="allowDrop(event)" ondrop="dropToBank(event)"><p style="width:100%; font-size:13px; color:#666;">DANH SÁCH TỪ KÉO THẢ VÀO CÁC CỘT:</p>`;
+                q.words.forEach(w => { if (!usedWords.includes(w)) html += `<div class="drag-word" draggable="true" ondragstart="dragStart(event, '${w}')">${w}</div>`; });
+                html += `</div>`;
+            }
+            document.getElementById("q-options").innerHTML = html;
+            renderGrid();
+        }
+
+        function allowDrop(ev) { ev.preventDefault(); }
+        function dragStart(ev, word) { draggedWord = word; ev.dataTransfer.setData("text", word); }
+        function dropToSlot(ev, slotId) { ev.preventDefault(); const qId = currentQuestions[currentIndex].id; if (!userAnswers[qId]) userAnswers[qId] = {}; userAnswers[qId][slotId] = draggedWord; renderQuestion(); }
+        function dropToColumn(ev, colIdx) { ev.preventDefault(); const qId = currentQuestions[currentIndex].id; if (!userAnswers[qId]) userAnswers[qId] = { 0: [], 1: [] }; Object.keys(userAnswers[qId]).forEach(c => { userAnswers[qId][c] = userAnswers[qId][c].filter(w => w !== draggedWord); }); if (!userAnswers[qId][colIdx]) userAnswers[qId][colIdx] = []; userAnswers[qId][colIdx].push(draggedWord); renderQuestion(); }
+        function dropToBank(ev) { ev.preventDefault(); const qId = currentQuestions[currentIndex].id; const q = currentQuestions[currentIndex]; if (q.type === "multi-drag" && userAnswers[qId]) Object.keys(userAnswers[qId]).forEach(k => { if (userAnswers[qId][k] === draggedWord) delete userAnswers[qId][k]; }); else if (q.type === "multi-column" && userAnswers[qId]) Object.keys(userAnswers[qId]).forEach(c => { userAnswers[qId][c] = userAnswers[qId][c].filter(w => w !== draggedWord); }); renderQuestion(); }
+        function setSlot(slotId) { activeDropSlot = slotId; renderQuestion(); }
+        function clickWord(word) { const qId = currentQuestions[currentIndex].id; if (!userAnswers[qId]) userAnswers[qId] = {}; let targetSlot = activeDropSlot !== null ? activeDropSlot : 0; userAnswers[qId][targetSlot] = word; renderQuestion(); }
+        function selectSingle(idx) { userAnswers[currentQuestions[currentIndex].id] = idx; renderGrid(); }
+        function selectMulti(idx) { const qId = currentQuestions[currentIndex].id; if (!userAnswers[qId]) userAnswers[qId] = []; const pos = userAnswers[qId].indexOf(idx); if (pos === -1) userAnswers[qId].push(idx); else userAnswers[qId].splice(pos, 1); renderGrid(); }
+        function selectTF(sIdx, val) { const qId = currentQuestions[currentIndex].id; if (!userAnswers[qId]) userAnswers[qId] = {}; userAnswers[qId][sIdx] = val; renderQuestion(); }
+        
+        function renderGrid() {
+            let html = "";
+            currentQuestions.forEach((q, idx) => {
+                let statusClass = userAnswers[q.id] !== undefined ? "answered" : "";
+                if (isSubmitted) statusClass = checkQuestionCorrect(q) ? "correct-btn" : "wrong-btn";
+                html += `<div class="grid-btn ${statusClass}" onclick="goToQuestion(${idx})">${idx + 1}</div>`;
+            });
+            document.getElementById("grid").innerHTML = html;
+        }
+
+        function checkQuestionCorrect(q) {
+            const ans = userAnswers[q.id]; if (!ans) return false;
+            if (q.type === "single") return ans === q.answer;
+            if (q.type === "multi" && Array.isArray(ans)) return ans.length === q.answer.length && ans.every(v => q.answer.includes(v));
+            if (q.type === "tf") { let ok = true; q.statements.forEach((_, idx) => { if (ans[idx] !== q.answer[idx]) ok = false; }); return ok; }
+            if (q.type === "multi-drag") { let ok = true; q.items.forEach(item => { if (ans[item.id] !== q.answer[item.id]) ok = false; }); return ok; }
+            if (q.type === "multi-column") { let ok = true; Object.keys(q.answer).forEach(colIdx => { const userCol = ans[colIdx] || []; const correctCol = q.answer[colIdx] || []; if (userCol.length !== correctCol.length) ok = false; else if (!userCol.every(w => correctCol.includes(w))) ok = false; }); return ok; }
+            return false;
+        }
+
+        function goToQuestion(idx) { currentIndex = idx; activeDropSlot = null; renderQuestion(); }
+        function nextQuestion() { if(currentIndex < currentQuestions.length - 1) { currentIndex++; activeDropSlot = null; renderQuestion(); } }
+        function prevQuestion() { if(currentIndex > 0) { currentIndex--; activeDropSlot = null; renderQuestion(); } }
+
+        function submitQuiz() {
+            isSubmitted = true; let correctCount = 0; let reviewHtml = "";
+            currentQuestions.forEach((q, idx) => {
+                const isCorrect = checkQuestionCorrect(q); if (isCorrect) correctCount++;
+                reviewHtml += `<div class="review-card ${isCorrect ? 'correct' : 'wrong'}"><strong>Câu ${idx + 1}: ${q.title}</strong><br><span>Kết quả: <b>${isCorrect ? '✅ ĐÚNG' : '❌ SAI'}</b></span><br>`;
+                if (q.type === "single") reviewHtml += `Đáp án chuẩn: <i>${q.options[q.answer]}</i>`;
+                else if (q.type === "multi") reviewHtml += `Đáp án chuẩn: <i>${q.answer.map(aIdx => q.options[aIdx]).join("; ")}</i>`;
+                else if (q.type === "tf") reviewHtml += `Đáp án chuẩn: <i>${q.statements.map((s, sIdx) => `${s} ->${q.answer[sIdx] ? 'Đúng' : 'Sai'}`).join(' | ')}</i>`;
+                else if (q.type === "multi-drag") reviewHtml += `Đáp án chuẩn: <i>${q.items.map(i => `${q.answer[i.id]}`).join(', ')}</i>`;
+                else if (q.type === "multi-column") { reviewHtml += `Đáp án chuẩn: <br>`; q.columns.forEach((cTitle, cIdx) => { reviewHtml += `- <b>${cTitle}:</b> ${q.answer[cIdx].join(', ')}<br>`; }); }
+                reviewHtml += `</div>`;
+            });
+            const score = ((correctCount / currentQuestions.length) * 10).toFixed(1);
+            const resBox = document.getElementById("result-box");
+            resBox.style.display = "block"; resBox.className = "result-box";
+            resBox.innerHTML = `🎉 Bạn trả lời đúng ${correctCount}/${currentQuestions.length} câu. <br> Tổng điểm: ${score} / 10`;
+            document.getElementById("review-list").innerHTML = reviewHtml;
+            document.getElementById("review-container").style.display = "block";
+            renderGrid(); window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
